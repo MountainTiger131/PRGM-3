@@ -14,7 +14,12 @@ class Enano(Personaje):
 
 # Atributo único
     def AumentaVida():
-        pass
+        aumentoVida=input("¡Ingresa tu aumento de vida! (Entre 50 y 100)\n>>> ")
+        if aumentoVida < 50 or aumentoVida > 100:
+            print("Salirse de los límites no es bueno.\nIntenta ingresar un valor válido.")
+            aumentoVida=input("¡Ingresa tu aumento de vida! (Entre 50 y 100)")
+            nuevaVida=Enano.GetVida+aumentoVida
+
     '''AumentaVida, este método se invoca antes de la ronda 1 en la que participe un objeto de la clase
     Enano, este debe solicitar al usuario que ingrese el aumento de la vida, este aumento debe ser
     un número entero entre 50 y 100

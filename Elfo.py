@@ -14,7 +14,8 @@ class Elfo(Personaje):
 
 # Atributo único
     def QuitaVida():
-        pass
+        vidaReducida=Elfo.GetVida*0.1
+        nuevaVida=Elfo.GetVida-vidaReducida
 
 # Atributos generales
     def Historia(self):

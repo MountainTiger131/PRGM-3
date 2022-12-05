@@ -14,7 +14,12 @@ class Humano(Personaje):
 
 # Atributo único
     def SuperBono():
-        pass
+        aumentoDaño=input("¡Ingresa tu bonificación de ATK! (Entre 5 y 15)\n>>> ")
+        if aumentoDaño > 15 or aumentoDaño < 5:
+            print("Salirse de los límites no es bueno.\nIntenta ingresar un valor válido.")
+            aumentoDaño=input("¡Ingresa  bonificación de ATK! (Entre 5 y 15)")
+            nuevoDaño=Humano.GetDaño+aumentoDaño
+
 
 # Atributos generales
     def Historia(self):

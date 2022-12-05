@@ -18,8 +18,10 @@ class Elfo(Personaje):
 
 # Atributos generales
     def Historia(self):
-        return super().Historia("Historia de elfo")
+        return super().Historia(Elfo.GetNombre, Elfo.GetArma, Elfo.GetVida, Elfo.GetDaño)
     def Victoria(self):
         return super().Victoria("Elfo gana!")
     def Derrota(self):
         return super().Derrota("Los elfos son una raza antiquísima y\ncon mucha experiencia en combate")
+    def MSJInic(self):
+        return super().MSJInic()

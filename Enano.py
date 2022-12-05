@@ -14,18 +14,17 @@ class Enano(Personaje):
 
 # Atributo único
     def AumentaVida():
-        NuevaVida=input(int("Ingrese el aumento de vida (Entre 50-100)"))
-        if NuevaVida<50 or NuevaVida>100:
-            print("Error de tipeo")
+        pass
     '''AumentaVida, este método se invoca antes de la ronda 1 en la que participe un objeto de la clase
     Enano, este debe solicitar al usuario que ingrese el aumento de la vida, este aumento debe ser
     un número entero entre 50 y 100
     '''
 # Atributos generales
     def Historia(self):
-        return super().Historia("Historia de enano")
+        return super(self).Historia("Historia de enano")
     def Victoria(self):
-        return super().Victoria("Enano gana")
+        return super().Victoria("¡El enano gana!")
     def Derrota(self):
-        return super().Derrota("Enano pierde")
-    
+        return super(self).Derrota("Los enanos vienen de un mundo perdido del cual heredaron mucho conocimiento místico, pero esta vez, la sabiduría suprema no fue suficiente.")
+    def MSJInic(self):
+        return super().MSJInic()

@@ -28,7 +28,7 @@ class Personaje():
 
     def SetVida(self, vida):
         self.__vida=vida
-    def Get(self):
+    def GetVida(self):
         return self.__vida
 
     def SetDaño(self, daño):
